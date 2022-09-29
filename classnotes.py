@@ -181,3 +181,13 @@ print(name1) # should print Eddie Aikau
 
 name2 = full_name ("Jack", "Tangel")
 print(name2)
+
+
+def listSum (list):
+    sum = 0
+    for i in range(len(list)):
+        sum += list[i]
+    print(sum)
+
+listSum([1,2,3,4])
+
