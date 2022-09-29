@@ -191,3 +191,56 @@ def listSum (list):
 
 listSum([1,2,3,4])
 
+# dictionaries
+
+#literal notation
+person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
+capitals = {} #create an empty dictionary then add values
+capitals["svk"] = "Bratislava"
+capitals["deu"] = "Berlin"
+capitals["dnk"] = "Copenhagen"
+capitals["Illinois"] = "Springfield"
+capitals["Colorado"] = "Denver"
+
+print(capitals)
+
+# Add 2 key-value pairs to this dictionary.
+
+# print the capitals dictionary to see how it changed!
+
+
+person = {"first_name": "Ada", "last_name": "Lovelace", "age": 42, "is_organ_donor": True}
+person2 = {
+    "first_name": 'Jack', 
+    'last_name': 'Tangel', 
+    'age': '10000', 
+    'is_organ_donor': True,
+    'isFun' : False
+    }
+# Create a another person dictionary called person_2 and print it to the terminal
+
+person2['email'] = 'thisisanemail@whatisanemail.com'
+
+person2['age'] = 24
+
+del person2['isFun']
+
+if 'email' not in person2:
+    person2['email'] = 'jackmtangel@gmail.com'
+else: 
+    print('why change what is already there')
+
+
+for data in person2:
+    print(data)
+    print(person2[data])
+
+for key, val in person2.items():
+    print(key, "=", val)
+
+print(person2)
+
+print(len(person2))
+
+print(str(person2))
+
