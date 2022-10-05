@@ -231,57 +231,71 @@
 #     print('why change what is already there')
 
 
-# for data in person2:
-#     print(data)
-#     print(person2[data])
+# # for data in person2:
+# #     print(data)
+# #     print(person2[data])
 
-# for key, val in person2.items():
-#     print(key, "=", val)
+# # for key, val in person2.items():
+# #     print(key, "=", val)
 
-# print(person2)
+# # print(person2)
 
-# print(len(person2))
+# # print(len(person2))
 
-# print(str(person2))
-
-
-
-class User:		
-    def __init__(self):
-        self.first_name = "Ada"
-        self.last_name = "Lovelace"
-        self.age = 42
-
-user_ada = User()
-print(user_ada.first_name)
-print(user_ada)
-
-user_2 = User()
-print(user_2)
+# # print(str(person2))
 
 
-class Shoe:
-    # now our method has 4 parameters (including self)!
-    def __init__(self, brand, shoe_type, price):
-    # we assign them accordingly
-        self.brand = brand
-        self.type = shoe_type
-        self.price = price
-        # the status is set to True by default
-        self.in_stock = True
 
-skater_shoe = Shoe("Vans", "Low-top Trainers", 59.99)
-dress_shoe = Shoe("Jack & Jill Bootery", "Ballet Flats", 29.99)
-print(skater_shoe.type)	# output: Low-top Trainers
-print(dress_shoe.type)	# output: Ballet Flats
+# class User:		
+#     def __init__(self):
+#         self.first_name = "Ada"
+#         self.last_name = "Lovelace"
+#         self.age = 42
 
-climbing_shoe = Shoe('La Sportiva', 'Solutions', 189.99)
-climbing_shoe.in_stock = False
+# user_ada = User()
+# print(user_ada.first_name)
+# print(user_ada)
+
+# user_2 = User()
+# print(user_2)
 
 
-print(climbing_shoe)
-print(climbing_shoe.type)
+# class Shoe:
+#     # now our method has 4 parameters (including self)!
+#     def __init__(self, brand, shoe_type, price):
+#     # we assign them accordingly
+#         self.brand = brand
+#         self.type = shoe_type
+#         self.price = price
+#         # the status is set to True by default
+#         self.in_stock = True
+
+# skater_shoe = Shoe("Vans", "Low-top Trainers", 59.99)
+# dress_shoe = Shoe("Jack & Jill Bootery", "Ballet Flats", 29.99)
+# print(skater_shoe.type)	# output: Low-top Trainers
+# print(dress_shoe.type)	# output: Ballet Flats
+
+# climbing_shoe = Shoe('La Sportiva', 'Solutions', 189.99)
+# climbing_shoe.in_stock = False
+
+
+# print(climbing_shoe)
+# print(climbing_shoe.type)
 # Ninja Challenges!
 # Open this code on the Trace website to get a better view of all the variables and their attributes.
 # Make a new instance of a shoe
 # Update the in_stock attribute to False
+
+
+class Player:
+    def __init__(self, data):
+        self.name = data['name']
+        self.age = data['age']
+        self.position = data['position']
+        self.team = data['team']
+
+kevin = {"name": "Kevin Durant", "age":34, "position": "small forward", "team": "Brooklyn Nets"}
+
+player_kevin = Player(kevin) 
+
+print(player_kevin.team)
